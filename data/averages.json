@@ -1,1 +1,2290 @@
-[]
+[
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:10:28.251Z",
+    "periodEnd": "2026-09-23T02:10:38.253Z",
+    "samples": 4,
+    "averages": {
+      "temperature": 29.7,
+      "humidity": 43.27,
+      "solarRadiation": 685.52
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:10:28.251Z",
+    "periodEnd": "2026-09-23T02:10:38.253Z",
+    "samples": 4,
+    "averages": {
+      "temperature": 18.8,
+      "humidity": 50.42,
+      "solarRadiation": 274.1
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:10:38.253Z",
+    "periodEnd": "2026-09-23T02:10:48.255Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 27.14,
+      "humidity": 50.06,
+      "solarRadiation": 671.7
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:10:38.253Z",
+    "periodEnd": "2026-09-23T02:10:48.255Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 27.28,
+      "humidity": 58.92,
+      "solarRadiation": 472.44
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:10:48.255Z",
+    "periodEnd": "2026-09-23T02:10:58.256Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 30.38,
+      "humidity": 52,
+      "solarRadiation": 569.16
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:10:48.255Z",
+    "periodEnd": "2026-09-23T02:10:58.256Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 24.86,
+      "humidity": 73.32,
+      "solarRadiation": 808.52
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:10:58.256Z",
+    "periodEnd": "2026-09-23T02:11:08.256Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 28.08,
+      "humidity": 45.44,
+      "solarRadiation": 553.08
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:10:58.256Z",
+    "periodEnd": "2026-09-23T02:11:08.256Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 23.82,
+      "humidity": 65.62,
+      "solarRadiation": 544.22
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:11:08.256Z",
+    "periodEnd": "2026-09-23T02:11:18.256Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 25.74,
+      "humidity": 73.84,
+      "solarRadiation": 284.7
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:11:08.256Z",
+    "periodEnd": "2026-09-23T02:11:18.256Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 23.78,
+      "humidity": 50.48,
+      "solarRadiation": 451.96
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:11:18.256Z",
+    "periodEnd": "2026-09-23T02:11:28.257Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 28.38,
+      "humidity": 69.94,
+      "solarRadiation": 386.1
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:11:18.256Z",
+    "periodEnd": "2026-09-23T02:11:28.257Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 25.04,
+      "humidity": 62.4,
+      "solarRadiation": 473.5
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:11:28.257Z",
+    "periodEnd": "2026-09-23T02:11:38.258Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 23.46,
+      "humidity": 58.5,
+      "solarRadiation": 688.32
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:11:28.257Z",
+    "periodEnd": "2026-09-23T02:11:38.258Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 24.86,
+      "humidity": 52.48,
+      "solarRadiation": 473.94
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:11:38.258Z",
+    "periodEnd": "2026-09-23T02:11:48.258Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 21.98,
+      "humidity": 61.74,
+      "solarRadiation": 800.84
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:11:38.258Z",
+    "periodEnd": "2026-09-23T02:11:48.258Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 24.52,
+      "humidity": 45.98,
+      "solarRadiation": 587.02
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:11:48.258Z",
+    "periodEnd": "2026-09-23T02:11:58.259Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 27.3,
+      "humidity": 62.22,
+      "solarRadiation": 461.44
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:11:48.258Z",
+    "periodEnd": "2026-09-23T02:11:58.259Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 25.06,
+      "humidity": 56.46,
+      "solarRadiation": 596.72
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:11:58.259Z",
+    "periodEnd": "2026-09-23T02:12:08.259Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 26.8,
+      "humidity": 66.08,
+      "solarRadiation": 554.86
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:11:58.259Z",
+    "periodEnd": "2026-09-23T02:12:08.259Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 28.64,
+      "humidity": 55.44,
+      "solarRadiation": 626.72
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:12:08.259Z",
+    "periodEnd": "2026-09-23T02:12:18.260Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 29.76,
+      "humidity": 61.42,
+      "solarRadiation": 526.8
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:12:08.259Z",
+    "periodEnd": "2026-09-23T02:12:18.260Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 22.14,
+      "humidity": 54.32,
+      "solarRadiation": 455.66
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:12:18.260Z",
+    "periodEnd": "2026-09-23T02:12:28.261Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 24.84,
+      "humidity": 56.76,
+      "solarRadiation": 535.96
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:12:18.260Z",
+    "periodEnd": "2026-09-23T02:12:28.261Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 23.38,
+      "humidity": 66.6,
+      "solarRadiation": 307.26
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:12:28.261Z",
+    "periodEnd": "2026-09-23T02:12:38.261Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 23.14,
+      "humidity": 67.98,
+      "solarRadiation": 465.04
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:12:28.261Z",
+    "periodEnd": "2026-09-23T02:12:38.261Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 25.66,
+      "humidity": 68.18,
+      "solarRadiation": 540.04
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:12:38.261Z",
+    "periodEnd": "2026-09-23T02:12:48.262Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 26.22,
+      "humidity": 62.46,
+      "solarRadiation": 435.12
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:12:38.261Z",
+    "periodEnd": "2026-09-23T02:12:48.262Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 26.86,
+      "humidity": 52.78,
+      "solarRadiation": 541.66
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:12:48.262Z",
+    "periodEnd": "2026-09-23T02:12:58.262Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 31.38,
+      "humidity": 48.5,
+      "solarRadiation": 663.54
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:12:48.262Z",
+    "periodEnd": "2026-09-23T02:12:58.262Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 23.44,
+      "humidity": 62.58,
+      "solarRadiation": 635.4
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:12:58.262Z",
+    "periodEnd": "2026-09-23T02:13:08.263Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 22.56,
+      "humidity": 56.46,
+      "solarRadiation": 474.66
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:12:58.262Z",
+    "periodEnd": "2026-09-23T02:13:08.263Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 24.32,
+      "humidity": 62.04,
+      "solarRadiation": 573.4
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:13:08.263Z",
+    "periodEnd": "2026-09-23T02:13:18.264Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 26.56,
+      "humidity": 57.16,
+      "solarRadiation": 622.4
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:13:08.263Z",
+    "periodEnd": "2026-09-23T02:13:18.264Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 19.38,
+      "humidity": 60.86,
+      "solarRadiation": 185.1
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:13:18.264Z",
+    "periodEnd": "2026-09-23T02:13:28.264Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 26.94,
+      "humidity": 72.94,
+      "solarRadiation": 564.14
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:13:18.264Z",
+    "periodEnd": "2026-09-23T02:13:28.264Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 22.48,
+      "humidity": 55.58,
+      "solarRadiation": 567.84
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:13:28.264Z",
+    "periodEnd": "2026-09-23T02:13:38.263Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 32.82,
+      "humidity": 72.44,
+      "solarRadiation": 196.34
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:13:28.264Z",
+    "periodEnd": "2026-09-23T02:13:38.263Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 27.48,
+      "humidity": 58.06,
+      "solarRadiation": 586.08
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:13:38.263Z",
+    "periodEnd": "2026-09-23T02:13:48.265Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 32.44,
+      "humidity": 61.78,
+      "solarRadiation": 529.72
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:13:38.263Z",
+    "periodEnd": "2026-09-23T02:13:48.265Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 27.7,
+      "humidity": 58.48,
+      "solarRadiation": 472.26
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:13:48.265Z",
+    "periodEnd": "2026-09-23T02:13:58.265Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 32.26,
+      "humidity": 60.86,
+      "solarRadiation": 440.6
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:13:48.265Z",
+    "periodEnd": "2026-09-23T02:13:58.265Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 23.12,
+      "humidity": 46.92,
+      "solarRadiation": 554.46
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:13:58.265Z",
+    "periodEnd": "2026-09-23T02:14:08.265Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 24.44,
+      "humidity": 64.6,
+      "solarRadiation": 598.34
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:13:58.265Z",
+    "periodEnd": "2026-09-23T02:14:08.265Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 26.42,
+      "humidity": 58.82,
+      "solarRadiation": 337.12
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:14:08.265Z",
+    "periodEnd": "2026-09-23T02:14:18.266Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 26.98,
+      "humidity": 56.7,
+      "solarRadiation": 263.36
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:14:08.265Z",
+    "periodEnd": "2026-09-23T02:14:18.266Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 22.9,
+      "humidity": 56.98,
+      "solarRadiation": 239.66
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:14:18.266Z",
+    "periodEnd": "2026-09-23T02:14:28.266Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 23.76,
+      "humidity": 75.38,
+      "solarRadiation": 464.78
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:14:18.266Z",
+    "periodEnd": "2026-09-23T02:14:28.266Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 27.26,
+      "humidity": 63.38,
+      "solarRadiation": 463.66
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:14:28.266Z",
+    "periodEnd": "2026-09-23T02:14:38.267Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 26.6,
+      "humidity": 61.02,
+      "solarRadiation": 499.82
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:14:28.266Z",
+    "periodEnd": "2026-09-23T02:14:38.267Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 22.64,
+      "humidity": 66.98,
+      "solarRadiation": 498.98
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:14:38.267Z",
+    "periodEnd": "2026-09-23T02:14:48.268Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 23.76,
+      "humidity": 61.48,
+      "solarRadiation": 455.62
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:14:38.267Z",
+    "periodEnd": "2026-09-23T02:14:48.268Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 27.62,
+      "humidity": 64.06,
+      "solarRadiation": 300.02
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:14:48.268Z",
+    "periodEnd": "2026-09-23T02:14:58.268Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 24.52,
+      "humidity": 62.4,
+      "solarRadiation": 236.52
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:14:48.268Z",
+    "periodEnd": "2026-09-23T02:14:58.268Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 25.2,
+      "humidity": 69.92,
+      "solarRadiation": 361.1
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:14:58.268Z",
+    "periodEnd": "2026-09-23T02:15:08.268Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 23.6,
+      "humidity": 70.02,
+      "solarRadiation": 687.44
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:14:58.268Z",
+    "periodEnd": "2026-09-23T02:15:08.268Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 25.5,
+      "humidity": 68.56,
+      "solarRadiation": 663.76
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:15:08.268Z",
+    "periodEnd": "2026-09-23T02:15:18.269Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 25.96,
+      "humidity": 59.74,
+      "solarRadiation": 484.46
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:15:08.268Z",
+    "periodEnd": "2026-09-23T02:15:18.269Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 27.22,
+      "humidity": 60.84,
+      "solarRadiation": 347.74
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:15:18.269Z",
+    "periodEnd": "2026-09-23T02:15:28.270Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 25.3,
+      "humidity": 69.5,
+      "solarRadiation": 487.18
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:15:18.269Z",
+    "periodEnd": "2026-09-23T02:15:28.270Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 21.86,
+      "humidity": 57.26,
+      "solarRadiation": 582.44
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:15:28.270Z",
+    "periodEnd": "2026-09-23T02:15:38.271Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 23.42,
+      "humidity": 60.44,
+      "solarRadiation": 537.34
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:15:28.270Z",
+    "periodEnd": "2026-09-23T02:15:38.271Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 27.62,
+      "humidity": 63.52,
+      "solarRadiation": 400.28
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:15:38.271Z",
+    "periodEnd": "2026-09-23T02:15:48.270Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 23.26,
+      "humidity": 57.6,
+      "solarRadiation": 548.18
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:15:38.271Z",
+    "periodEnd": "2026-09-23T02:15:48.270Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 27.12,
+      "humidity": 63.58,
+      "solarRadiation": 790.84
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:15:48.270Z",
+    "periodEnd": "2026-09-23T02:15:58.271Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 22.42,
+      "humidity": 59.54,
+      "solarRadiation": 454.04
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:15:48.270Z",
+    "periodEnd": "2026-09-23T02:15:58.271Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 28.84,
+      "humidity": 54.52,
+      "solarRadiation": 459.1
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:15:58.271Z",
+    "periodEnd": "2026-09-23T02:16:08.272Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 22.3,
+      "humidity": 65.8,
+      "solarRadiation": 545.08
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:15:58.271Z",
+    "periodEnd": "2026-09-23T02:16:08.272Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 24.34,
+      "humidity": 51.92,
+      "solarRadiation": 647.54
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:16:08.272Z",
+    "periodEnd": "2026-09-23T02:16:18.273Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 25.9,
+      "humidity": 55.36,
+      "solarRadiation": 381.12
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:16:08.272Z",
+    "periodEnd": "2026-09-23T02:16:18.273Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 25,
+      "humidity": 59.72,
+      "solarRadiation": 500.96
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:16:18.273Z",
+    "periodEnd": "2026-09-23T02:16:28.273Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 22.38,
+      "humidity": 52.76,
+      "solarRadiation": 543.68
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:16:18.273Z",
+    "periodEnd": "2026-09-23T02:16:28.273Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 29.92,
+      "humidity": 66.56,
+      "solarRadiation": 397.66
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:16:28.273Z",
+    "periodEnd": "2026-09-23T02:16:38.274Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 25.54,
+      "humidity": 54.62,
+      "solarRadiation": 353.3
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:16:28.273Z",
+    "periodEnd": "2026-09-23T02:16:38.274Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 27.34,
+      "humidity": 51.68,
+      "solarRadiation": 618.78
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:16:38.274Z",
+    "periodEnd": "2026-09-23T02:16:48.276Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 31.16,
+      "humidity": 52.96,
+      "solarRadiation": 718.56
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:16:38.274Z",
+    "periodEnd": "2026-09-23T02:16:48.276Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 24.94,
+      "humidity": 50.22,
+      "solarRadiation": 696.66
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:16:48.276Z",
+    "periodEnd": "2026-09-23T02:16:58.277Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 29.74,
+      "humidity": 70.28,
+      "solarRadiation": 547.66
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:16:48.276Z",
+    "periodEnd": "2026-09-23T02:16:58.277Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 23.4,
+      "humidity": 66.8,
+      "solarRadiation": 329.36
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:16:58.277Z",
+    "periodEnd": "2026-09-23T02:17:08.277Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 19.7,
+      "humidity": 57.56,
+      "solarRadiation": 465.84
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:16:58.277Z",
+    "periodEnd": "2026-09-23T02:17:08.277Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 30.12,
+      "humidity": 64.18,
+      "solarRadiation": 551.48
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:17:08.277Z",
+    "periodEnd": "2026-09-23T02:17:18.277Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 24.24,
+      "humidity": 62.88,
+      "solarRadiation": 340.72
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:17:08.277Z",
+    "periodEnd": "2026-09-23T02:17:18.277Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 26.74,
+      "humidity": 49.68,
+      "solarRadiation": 484.6
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:17:18.277Z",
+    "periodEnd": "2026-09-23T02:17:28.277Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 31.34,
+      "humidity": 59.18,
+      "solarRadiation": 606.46
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:17:18.277Z",
+    "periodEnd": "2026-09-23T02:17:28.277Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 31.64,
+      "humidity": 50.98,
+      "solarRadiation": 505.76
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:17:28.277Z",
+    "periodEnd": "2026-09-23T02:17:38.277Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 30.06,
+      "humidity": 68.74,
+      "solarRadiation": 606.26
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:17:28.277Z",
+    "periodEnd": "2026-09-23T02:17:38.277Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 28.7,
+      "humidity": 55.1,
+      "solarRadiation": 491.64
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:17:38.277Z",
+    "periodEnd": "2026-09-23T02:17:48.278Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 21.98,
+      "humidity": 43,
+      "solarRadiation": 657.64
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:17:38.277Z",
+    "periodEnd": "2026-09-23T02:17:48.278Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 22.56,
+      "humidity": 65.14,
+      "solarRadiation": 499.7
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:17:48.278Z",
+    "periodEnd": "2026-09-23T02:17:58.279Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 27.16,
+      "humidity": 58.66,
+      "solarRadiation": 410.5
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:17:48.278Z",
+    "periodEnd": "2026-09-23T02:17:58.279Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 27.68,
+      "humidity": 72.68,
+      "solarRadiation": 459.46
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:17:58.279Z",
+    "periodEnd": "2026-09-23T02:18:08.280Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 29.48,
+      "humidity": 59.94,
+      "solarRadiation": 419.22
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:17:58.279Z",
+    "periodEnd": "2026-09-23T02:18:08.280Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 32.22,
+      "humidity": 72.66,
+      "solarRadiation": 635.72
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:18:08.280Z",
+    "periodEnd": "2026-09-23T02:18:18.280Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 27.36,
+      "humidity": 68.12,
+      "solarRadiation": 482.52
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:18:08.280Z",
+    "periodEnd": "2026-09-23T02:18:18.280Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 25.86,
+      "humidity": 68.76,
+      "solarRadiation": 399.08
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:18:18.280Z",
+    "periodEnd": "2026-09-23T02:18:28.281Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 31.84,
+      "humidity": 59.44,
+      "solarRadiation": 710.06
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:18:18.280Z",
+    "periodEnd": "2026-09-23T02:18:28.281Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 27.68,
+      "humidity": 58.74,
+      "solarRadiation": 563.14
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:18:28.281Z",
+    "periodEnd": "2026-09-23T02:18:38.281Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 29.86,
+      "humidity": 57.58,
+      "solarRadiation": 740.44
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:18:28.281Z",
+    "periodEnd": "2026-09-23T02:18:38.281Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 20.76,
+      "humidity": 53.48,
+      "solarRadiation": 304.94
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:18:38.281Z",
+    "periodEnd": "2026-09-23T02:18:48.282Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 27.8,
+      "humidity": 57.7,
+      "solarRadiation": 328.6
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:18:38.281Z",
+    "periodEnd": "2026-09-23T02:18:48.282Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 28.64,
+      "humidity": 50.08,
+      "solarRadiation": 557.8
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:18:48.282Z",
+    "periodEnd": "2026-09-23T02:18:58.282Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 29.28,
+      "humidity": 45.34,
+      "solarRadiation": 396.96
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:18:48.282Z",
+    "periodEnd": "2026-09-23T02:18:58.282Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 31.64,
+      "humidity": 52.82,
+      "solarRadiation": 704.58
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:18:58.282Z",
+    "periodEnd": "2026-09-23T02:19:08.282Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 30.32,
+      "humidity": 59.7,
+      "solarRadiation": 587.26
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:18:58.282Z",
+    "periodEnd": "2026-09-23T02:19:08.282Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 28.14,
+      "humidity": 52.66,
+      "solarRadiation": 634.24
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:19:08.282Z",
+    "periodEnd": "2026-09-23T02:19:18.282Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 26.18,
+      "humidity": 58.8,
+      "solarRadiation": 410.66
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:19:08.282Z",
+    "periodEnd": "2026-09-23T02:19:18.282Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 26.36,
+      "humidity": 62.72,
+      "solarRadiation": 551.48
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:19:18.282Z",
+    "periodEnd": "2026-09-23T02:19:28.282Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 24.36,
+      "humidity": 72.24,
+      "solarRadiation": 759.72
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:19:18.282Z",
+    "periodEnd": "2026-09-23T02:19:28.282Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 28,
+      "humidity": 73.36,
+      "solarRadiation": 552.92
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:19:28.282Z",
+    "periodEnd": "2026-09-23T02:19:38.283Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 30,
+      "humidity": 54.46,
+      "solarRadiation": 518.78
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:19:28.282Z",
+    "periodEnd": "2026-09-23T02:19:38.283Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 23.12,
+      "humidity": 58.12,
+      "solarRadiation": 564.14
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:19:38.283Z",
+    "periodEnd": "2026-09-23T02:19:48.282Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 27.88,
+      "humidity": 57.86,
+      "solarRadiation": 567.76
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:19:38.283Z",
+    "periodEnd": "2026-09-23T02:19:48.282Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 18.98,
+      "humidity": 59.84,
+      "solarRadiation": 286
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:19:48.282Z",
+    "periodEnd": "2026-09-23T02:19:58.282Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 24.28,
+      "humidity": 54.38,
+      "solarRadiation": 510.9
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:19:48.282Z",
+    "periodEnd": "2026-09-23T02:19:58.282Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 24.88,
+      "humidity": 53.62,
+      "solarRadiation": 261.36
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:19:58.282Z",
+    "periodEnd": "2026-09-23T02:20:08.283Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 25.58,
+      "humidity": 59.64,
+      "solarRadiation": 434.06
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:19:58.282Z",
+    "periodEnd": "2026-09-23T02:20:08.283Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 29.78,
+      "humidity": 64.6,
+      "solarRadiation": 637.28
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:20:08.283Z",
+    "periodEnd": "2026-09-23T02:20:18.283Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 24.88,
+      "humidity": 66.38,
+      "solarRadiation": 291.08
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:20:08.283Z",
+    "periodEnd": "2026-09-23T02:20:18.283Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 25.26,
+      "humidity": 64,
+      "solarRadiation": 504.68
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:20:18.283Z",
+    "periodEnd": "2026-09-23T02:20:28.284Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 22.38,
+      "humidity": 58.2,
+      "solarRadiation": 453.68
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:20:18.283Z",
+    "periodEnd": "2026-09-23T02:20:28.284Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 32.36,
+      "humidity": 57.44,
+      "solarRadiation": 770.84
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:20:28.284Z",
+    "periodEnd": "2026-09-23T02:20:38.284Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 21.12,
+      "humidity": 58.22,
+      "solarRadiation": 538.6
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:20:28.284Z",
+    "periodEnd": "2026-09-23T02:20:38.284Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 26.48,
+      "humidity": 72.14,
+      "solarRadiation": 383.76
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:20:38.284Z",
+    "periodEnd": "2026-09-23T02:20:48.284Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 27.54,
+      "humidity": 67.46,
+      "solarRadiation": 796.32
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:20:38.284Z",
+    "periodEnd": "2026-09-23T02:20:48.284Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 24.48,
+      "humidity": 66.44,
+      "solarRadiation": 569.06
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:20:48.284Z",
+    "periodEnd": "2026-09-23T02:20:58.285Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 26.76,
+      "humidity": 61.34,
+      "solarRadiation": 631.82
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:20:48.284Z",
+    "periodEnd": "2026-09-23T02:20:58.285Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 25.28,
+      "humidity": 64.28,
+      "solarRadiation": 626.86
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:20:58.285Z",
+    "periodEnd": "2026-09-23T02:21:08.284Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 21.3,
+      "humidity": 49.58,
+      "solarRadiation": 383.76
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:20:58.285Z",
+    "periodEnd": "2026-09-23T02:21:08.284Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 24.14,
+      "humidity": 53,
+      "solarRadiation": 468
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:21:08.284Z",
+    "periodEnd": "2026-09-23T02:21:18.285Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 27.58,
+      "humidity": 65.04,
+      "solarRadiation": 343.4
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:21:08.284Z",
+    "periodEnd": "2026-09-23T02:21:18.285Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 27.34,
+      "humidity": 57.76,
+      "solarRadiation": 748.02
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:21:18.285Z",
+    "periodEnd": "2026-09-23T02:21:28.286Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 28.3,
+      "humidity": 68.02,
+      "solarRadiation": 665.94
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:21:18.285Z",
+    "periodEnd": "2026-09-23T02:21:28.286Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 30.02,
+      "humidity": 64.86,
+      "solarRadiation": 697.88
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:21:28.286Z",
+    "periodEnd": "2026-09-23T02:21:38.289Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 22.46,
+      "humidity": 61.36,
+      "solarRadiation": 376.04
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:21:28.286Z",
+    "periodEnd": "2026-09-23T02:21:38.289Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 25.18,
+      "humidity": 49.36,
+      "solarRadiation": 329.38
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:21:38.289Z",
+    "periodEnd": "2026-09-23T02:21:48.288Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 22.62,
+      "humidity": 58.78,
+      "solarRadiation": 587.56
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:21:38.289Z",
+    "periodEnd": "2026-09-23T02:21:48.288Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 27.84,
+      "humidity": 44.6,
+      "solarRadiation": 256.32
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:21:48.288Z",
+    "periodEnd": "2026-09-23T02:21:58.288Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 26.94,
+      "humidity": 70.42,
+      "solarRadiation": 300.46
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:21:48.288Z",
+    "periodEnd": "2026-09-23T02:21:58.288Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 26.34,
+      "humidity": 62.48,
+      "solarRadiation": 521.28
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:21:58.288Z",
+    "periodEnd": "2026-09-23T02:22:08.288Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 25.32,
+      "humidity": 65.14,
+      "solarRadiation": 399.64
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:21:58.288Z",
+    "periodEnd": "2026-09-23T02:22:08.288Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 26.06,
+      "humidity": 66.76,
+      "solarRadiation": 512.96
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:22:08.288Z",
+    "periodEnd": "2026-09-23T02:22:18.289Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 26.78,
+      "humidity": 49.74,
+      "solarRadiation": 620.36
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:22:08.288Z",
+    "periodEnd": "2026-09-23T02:22:18.289Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 25.12,
+      "humidity": 61.24,
+      "solarRadiation": 650.48
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:22:18.289Z",
+    "periodEnd": "2026-09-23T02:22:28.288Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 24.08,
+      "humidity": 60.4,
+      "solarRadiation": 317.36
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:22:18.289Z",
+    "periodEnd": "2026-09-23T02:22:28.288Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 21.62,
+      "humidity": 54.84,
+      "solarRadiation": 328.56
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:22:28.288Z",
+    "periodEnd": "2026-09-23T02:22:38.289Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 25.78,
+      "humidity": 53.8,
+      "solarRadiation": 671.68
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:22:28.288Z",
+    "periodEnd": "2026-09-23T02:22:38.289Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 22.24,
+      "humidity": 60.46,
+      "solarRadiation": 644.18
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:22:38.289Z",
+    "periodEnd": "2026-09-23T02:22:48.290Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 28.34,
+      "humidity": 66.48,
+      "solarRadiation": 236.42
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:22:38.289Z",
+    "periodEnd": "2026-09-23T02:22:48.290Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 24.98,
+      "humidity": 50,
+      "solarRadiation": 514.22
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:22:48.290Z",
+    "periodEnd": "2026-09-23T02:22:58.290Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 24.74,
+      "humidity": 60.42,
+      "solarRadiation": 427.16
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:22:48.290Z",
+    "periodEnd": "2026-09-23T02:22:58.290Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 27.4,
+      "humidity": 56.88,
+      "solarRadiation": 577.4
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:22:58.290Z",
+    "periodEnd": "2026-09-23T02:23:08.290Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 24.32,
+      "humidity": 56.82,
+      "solarRadiation": 502.84
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:22:58.290Z",
+    "periodEnd": "2026-09-23T02:23:08.290Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 25.1,
+      "humidity": 58.74,
+      "solarRadiation": 485
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:23:08.290Z",
+    "periodEnd": "2026-09-23T02:23:18.293Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 22.82,
+      "humidity": 56.4,
+      "solarRadiation": 348.5
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:23:08.290Z",
+    "periodEnd": "2026-09-23T02:23:18.293Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 28.68,
+      "humidity": 62.18,
+      "solarRadiation": 437.6
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:23:18.293Z",
+    "periodEnd": "2026-09-23T02:23:28.293Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 25.2,
+      "humidity": 61.22,
+      "solarRadiation": 620.68
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:23:18.293Z",
+    "periodEnd": "2026-09-23T02:23:28.293Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 31.4,
+      "humidity": 66.58,
+      "solarRadiation": 268.02
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:23:28.293Z",
+    "periodEnd": "2026-09-23T02:23:38.295Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 22.6,
+      "humidity": 61.26,
+      "solarRadiation": 555.5
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:23:28.293Z",
+    "periodEnd": "2026-09-23T02:23:38.295Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 23.16,
+      "humidity": 67.6,
+      "solarRadiation": 587.42
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:23:38.295Z",
+    "periodEnd": "2026-09-23T02:23:48.296Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 28.48,
+      "humidity": 58.62,
+      "solarRadiation": 597.6
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:23:38.295Z",
+    "periodEnd": "2026-09-23T02:23:48.296Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 25.56,
+      "humidity": 56.24,
+      "solarRadiation": 409.02
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:23:48.296Z",
+    "periodEnd": "2026-09-23T02:23:58.295Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 32.02,
+      "humidity": 64,
+      "solarRadiation": 626.98
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:23:48.296Z",
+    "periodEnd": "2026-09-23T02:23:58.295Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 21.92,
+      "humidity": 59.22,
+      "solarRadiation": 486.58
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:23:58.295Z",
+    "periodEnd": "2026-09-23T02:24:08.295Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 35.04,
+      "humidity": 58.34,
+      "solarRadiation": 435.82
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:23:58.295Z",
+    "periodEnd": "2026-09-23T02:24:08.295Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 24.16,
+      "humidity": 66.38,
+      "solarRadiation": 349.88
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:24:08.295Z",
+    "periodEnd": "2026-09-23T02:24:18.295Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 27.9,
+      "humidity": 67.68,
+      "solarRadiation": 255.48
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:24:08.295Z",
+    "periodEnd": "2026-09-23T02:24:18.295Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 30.58,
+      "humidity": 59.08,
+      "solarRadiation": 452.06
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:24:18.295Z",
+    "periodEnd": "2026-09-23T02:24:28.296Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 22.94,
+      "humidity": 64.38,
+      "solarRadiation": 421.04
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:24:18.295Z",
+    "periodEnd": "2026-09-23T02:24:28.296Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 26.78,
+      "humidity": 54.26,
+      "solarRadiation": 605.22
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:24:28.296Z",
+    "periodEnd": "2026-09-23T02:24:38.295Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 22.66,
+      "humidity": 59.18,
+      "solarRadiation": 603.34
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:24:28.296Z",
+    "periodEnd": "2026-09-23T02:24:38.295Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 26.98,
+      "humidity": 63.78,
+      "solarRadiation": 485.82
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:24:38.295Z",
+    "periodEnd": "2026-09-23T02:24:48.298Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 21.2,
+      "humidity": 67.8,
+      "solarRadiation": 533.22
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:24:38.295Z",
+    "periodEnd": "2026-09-23T02:24:48.298Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 20.94,
+      "humidity": 59.64,
+      "solarRadiation": 365.14
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:24:48.298Z",
+    "periodEnd": "2026-09-23T02:24:58.298Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 28.7,
+      "humidity": 83.2,
+      "solarRadiation": 289.34
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:24:48.298Z",
+    "periodEnd": "2026-09-23T02:24:58.298Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 23.62,
+      "humidity": 50.84,
+      "solarRadiation": 639.52
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:24:58.298Z",
+    "periodEnd": "2026-09-23T02:25:08.298Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 23.44,
+      "humidity": 58.96,
+      "solarRadiation": 752.5
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:24:58.298Z",
+    "periodEnd": "2026-09-23T02:25:08.298Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 22.62,
+      "humidity": 52.82,
+      "solarRadiation": 580.76
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:25:08.298Z",
+    "periodEnd": "2026-09-23T02:25:18.298Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 25.98,
+      "humidity": 62.92,
+      "solarRadiation": 271.66
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:25:08.298Z",
+    "periodEnd": "2026-09-23T02:25:18.298Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 29.28,
+      "humidity": 59.32,
+      "solarRadiation": 360.46
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:25:18.298Z",
+    "periodEnd": "2026-09-23T02:25:28.299Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 30.38,
+      "humidity": 52.1,
+      "solarRadiation": 751.88
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:25:18.298Z",
+    "periodEnd": "2026-09-23T02:25:28.299Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 27.7,
+      "humidity": 60.96,
+      "solarRadiation": 582.3
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:25:28.299Z",
+    "periodEnd": "2026-09-23T02:25:38.301Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 27.38,
+      "humidity": 73.58,
+      "solarRadiation": 310.18
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:25:28.299Z",
+    "periodEnd": "2026-09-23T02:25:38.301Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 22.4,
+      "humidity": 46.64,
+      "solarRadiation": 766.18
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:25:38.301Z",
+    "periodEnd": "2026-09-23T02:25:48.304Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 23,
+      "humidity": 57.6,
+      "solarRadiation": 576.8
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:25:38.301Z",
+    "periodEnd": "2026-09-23T02:25:48.304Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 28.4,
+      "humidity": 46.88,
+      "solarRadiation": 480.04
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:25:48.304Z",
+    "periodEnd": "2026-09-23T02:25:58.303Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 24.6,
+      "humidity": 66.78,
+      "solarRadiation": 540.32
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:25:48.304Z",
+    "periodEnd": "2026-09-23T02:25:58.303Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 28.64,
+      "humidity": 49.9,
+      "solarRadiation": 619.18
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:25:58.303Z",
+    "periodEnd": "2026-09-23T02:26:08.304Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 29.8,
+      "humidity": 63.38,
+      "solarRadiation": 406.4
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:25:58.303Z",
+    "periodEnd": "2026-09-23T02:26:08.304Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 30.34,
+      "humidity": 70.52,
+      "solarRadiation": 691.3
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:26:08.304Z",
+    "periodEnd": "2026-09-23T02:26:18.307Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 24.98,
+      "humidity": 61.64,
+      "solarRadiation": 473.46
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:26:08.304Z",
+    "periodEnd": "2026-09-23T02:26:18.307Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 23.4,
+      "humidity": 72.08,
+      "solarRadiation": 429.58
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:26:18.307Z",
+    "periodEnd": "2026-09-23T02:26:28.306Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 23.96,
+      "humidity": 58.92,
+      "solarRadiation": 627.3
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:26:18.307Z",
+    "periodEnd": "2026-09-23T02:26:28.306Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 25.1,
+      "humidity": 68.56,
+      "solarRadiation": 526.88
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:26:28.306Z",
+    "periodEnd": "2026-09-23T02:26:38.306Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 33.12,
+      "humidity": 58.7,
+      "solarRadiation": 769.7
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:26:28.306Z",
+    "periodEnd": "2026-09-23T02:26:38.306Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 29.9,
+      "humidity": 61.46,
+      "solarRadiation": 287.82
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:26:38.306Z",
+    "periodEnd": "2026-09-23T02:26:48.306Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 28.88,
+      "humidity": 48.24,
+      "solarRadiation": 619.24
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:26:38.306Z",
+    "periodEnd": "2026-09-23T02:26:48.306Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 24.8,
+      "humidity": 64.54,
+      "solarRadiation": 589.88
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:26:48.306Z",
+    "periodEnd": "2026-09-23T02:26:58.306Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 27,
+      "humidity": 74.3,
+      "solarRadiation": 455.58
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:26:48.306Z",
+    "periodEnd": "2026-09-23T02:26:58.306Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 30.8,
+      "humidity": 56.2,
+      "solarRadiation": 371.66
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:26:58.306Z",
+    "periodEnd": "2026-09-23T02:27:08.307Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 27.5,
+      "humidity": 61.78,
+      "solarRadiation": 370.2
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:26:58.306Z",
+    "periodEnd": "2026-09-23T02:27:08.307Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 24.52,
+      "humidity": 56.76,
+      "solarRadiation": 730.3
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:27:08.307Z",
+    "periodEnd": "2026-09-23T02:27:18.310Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 22.76,
+      "humidity": 73.96,
+      "solarRadiation": 416.84
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:27:08.307Z",
+    "periodEnd": "2026-09-23T02:27:18.310Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 27.48,
+      "humidity": 65.82,
+      "solarRadiation": 640.86
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:27:18.310Z",
+    "periodEnd": "2026-09-23T02:27:28.309Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 22.26,
+      "humidity": 59.2,
+      "solarRadiation": 502.34
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:27:18.310Z",
+    "periodEnd": "2026-09-23T02:27:28.309Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 27.02,
+      "humidity": 50.98,
+      "solarRadiation": 700.44
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:27:28.309Z",
+    "periodEnd": "2026-09-23T02:27:38.309Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 28.6,
+      "humidity": 71.4,
+      "solarRadiation": 559.94
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:27:28.309Z",
+    "periodEnd": "2026-09-23T02:27:38.309Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 22.92,
+      "humidity": 44.44,
+      "solarRadiation": 404.86
+    }
+  },
+  {
+    "gateway": "G1",
+    "periodStart": "2026-09-23T02:27:38.309Z",
+    "periodEnd": "2026-09-23T02:27:48.310Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 28.04,
+      "humidity": 58.14,
+      "solarRadiation": 408.16
+    }
+  },
+  {
+    "gateway": "G2",
+    "periodStart": "2026-09-23T02:27:38.309Z",
+    "periodEnd": "2026-09-23T02:27:48.310Z",
+    "samples": 5,
+    "averages": {
+      "temperature": 20.34,
+      "humidity": 43.3,
+      "solarRadiation": 463
+    }
+  }
+]
