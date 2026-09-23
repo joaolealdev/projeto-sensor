@@ -1,0 +1,19 @@
+{
+  "name": "agricultural-monitoring",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sistema distribuido de monitoramento agricola com sensores IoT simulados sobre sockets TCP nativos",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "sensor:s1": "ts-node src/sensors/sensor-server.ts S1",
+    "sensor:s2": "ts-node src/sensors/sensor-server.ts S2",
+    "gateway:g1": "ts-node src/gateways/gateway.ts G1",
+    "gateway:g2": "ts-node src/gateways/gateway.ts G2",
+    "average-service": "ts-node src/services/average-service.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
