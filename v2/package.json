@@ -1,0 +1,27 @@
+{
+  "name": "agricultural-monitoring-v2",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Monitoramento agricola distribuido (v2): nos de campo e gateways Edge ligados por sockets TCP, servico de calculo chamado por gRPC e SQLite",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "dev:calc": "tsx src/calc-service/calc-service.ts",
+    "dev:field": "tsx src/field-node/node-server.ts",
+    "dev:gateway": "tsx src/edge/gateway.ts",
+    "dev:fog": "tsx src/fog/fog.ts",
+    "dev:menu": "tsx src/launcher/menu.ts",
+    "dev:report": "tsx src/edge/report.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.14.7",
+    "@grpc/proto-loader": "^0.8.1"
+  }
+}

@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package smartfarm;
+
+// gateway (cliente) -> servico de calculo (servidor)
+service MeanCalculator {
+  rpc Average(AverageRequest) returns (AverageReply);
+}
+
+// uma serie e uma lista de numeros com um nome qualquer ("temperature", ...);
+// o servico nao sabe o que o nome significa, so devolve a media de cada uma
+message NamedSeries {
+  string name = 1;
+  repeated double values = 2;
+}
+
+message AverageRequest {
+  repeated NamedSeries series = 1;
+}
+
+message NamedMean {
+  string name = 1;
+  double mean = 2;
+}
+
+message AverageReply {
+  repeated NamedMean means = 1;
+}
