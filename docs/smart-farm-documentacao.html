@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smart Farm: documentação do projeto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap">
+<style>
+  :root {
+    color-scheme: light dark;
+    --ground: #E9ECE7;
+    --page: #FFFFFF;
+    --panel: #F1F5EE;
+    --ink: #1B221E;
+    --muted: #59635D;
+    --faint: #8A938D;
+    --line: #E2E7DF;
+    --line-strong: #CDD6CC;
+    --primary: #00552B;
+    --primary-2: #0A6E3C;
+    --accent: #E67817;
+    --teal: #43948C;
+    --blue: #0050A3;
+    --ok: #1B9D4A;
+    --warn: #B86E00;
+    --bad: #C42222;
+    --code-bg: #1D2025;
+    --code-ink: #E8EAED;
+    --band-bg: #00552B;
+    --band-ink: #EFF6F0;
+    --band-eyebrow: #B3D98C;
+    --band-line: rgba(255,255,255,.20);
+    --band-pill: rgba(255,255,255,.12);
+    --shadow: 0 1px 2px rgba(20,40,28,.06), 0 14px 38px rgba(20,40,28,.12);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #0C120F;
+      --page: #121A16;
+      --panel: #17211C;
+      --ink: #E9EFE9;
+      --muted: #A6B0A8;
+      --faint: #7C867E;
+      --line: #25302A;
+      --line-strong: #303F37;
+      --primary: #7FC98F;
+      --primary-2: #9AD6A6;
+      --accent: #F0912F;
+      --teal: #6BB6AE;
+      --blue: #6FA8E4;
+      --ok: #6FCF8E;
+      --warn: #F5B544;
+      --bad: #F07A7A;
+      --code-bg: #0A100D;
+      --band-bg: #05170D;
+      --band-ink: #EAF3EC;
+      --band-line: rgba(255,255,255,.14);
+      --band-pill: rgba(255,255,255,.08);
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 18px 44px rgba(0,0,0,.5);
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font: 400 15px/1.62 "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  .doc {
+    max-width: 862px;
+    margin: 32px auto;
+    background: var(--page);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+
+  .band {
+    background: var(--band-bg);
+    color: var(--band-ink);
+    border-bottom: 3px solid var(--accent);
+    padding: 2.1rem 3rem 1.7rem;
+  }
+  .eyebrow {
+    margin: 0 0 .9rem;
+    font: 600 .72rem/1 "Fira Sans", "Segoe UI", system-ui, sans-serif;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--band-eyebrow);
+  }
+  .band h1 {
+    margin: 0;
+    font: 600 clamp(1.5rem, 1.1rem + 1.7vw, 1.95rem)/1.16 "Fira Sans", "Segoe UI", system-ui, sans-serif;
+    letter-spacing: -.011em;
+    text-wrap: balance;
+  }
+  .band .sub { margin: .55rem 0 0; font-size: .95rem; opacity: .82; }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .5rem 1.4rem;
+    margin-top: 1.15rem;
+    font-size: .8rem;
+  }
+  .meta > div { opacity: .82; }
+  .meta b { font-weight: 600; color: inherit; opacity: 1; }
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: .45rem;
+    font: 600 .74rem/1 "Fira Sans", "Segoe UI", system-ui, sans-serif;
+    letter-spacing: .02em;
+    background: var(--band-pill);
+    border: 1px solid var(--band-line);
+    border-radius: 999px;
+    padding: .38rem .72rem;
+  }
+  .pill .dot { width: .5rem; height: .5rem; border-radius: 50%; background: #9BD67F; }
+
+  .body { padding: 2.3rem 3rem 2rem; }
+
+  .lead {
+    margin: 0 0 1.4rem;
+    padding-left: 1rem;
+    border-left: 3px solid var(--accent);
+    max-width: 66ch;
+    font-size: 1.02rem;
+    font-weight: 500;
+    line-height: 1.56;
+    text-wrap: pretty;
+  }
+
+  .toc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem .5rem;
+    margin: 0 0 2rem;
+    padding: 0;
+    list-style: none;
+  }
+  .toc a {
+    display: inline-block;
+    font: 600 .72rem/1 "Fira Sans", "Segoe UI", system-ui, sans-serif;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--primary);
+    border: 1px solid var(--line-strong);
+    border-radius: 999px;
+    padding: .45rem .75rem;
+  }
+  .toc a:hover { background: var(--panel); }
+  .toc .n { color: var(--accent); margin-right: .35rem; font-variant-numeric: tabular-nums; }
+
+  .sections { display: flex; flex-direction: column; gap: 2rem; }
+  section { scroll-margin-top: 1rem; }
+
+  .kicker {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    margin: 0 0 .5rem;
+    font: 600 .72rem/1 "Fira Sans", "Segoe UI", system-ui, sans-serif;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .kicker .n { color: var(--primary); font-variant-numeric: tabular-nums; }
+  .kicker::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+
+  h2 {
+    margin: 0 0 .7rem;
+    font: 600 1.16rem/1.3 "Fira Sans", "Segoe UI", system-ui, sans-serif;
+    color: var(--primary);
+    letter-spacing: -.005em;
+    text-wrap: balance;
+  }
+  h3 {
+    margin: 1.3rem 0 .45rem;
+    font: 600 .95rem/1.3 "Fira Sans", "Segoe UI", system-ui, sans-serif;
+    color: var(--ink);
+  }
+
+  section p { margin: 0 0 .6rem; max-width: 66ch; color: var(--muted); }
+  b, strong { font-weight: 600; color: var(--ink); }
+
+  ul { margin: 0; padding: 0; list-style: none; }
+  section ul li {
+    position: relative;
+    padding-left: 1.4rem;
+    margin: .3rem 0;
+    text-wrap: pretty;
+  }
+  section ul li::before { position: absolute; left: 0; top: .015em; font-size: .92em; }
+  .list-in li::before    { content: "\25AA"; color: var(--primary); }
+  .list-check li::before { content: "\2713"; color: var(--primary); font-weight: 700; }
+  .list-out li::before   { content: "\2715"; color: var(--accent);  font-weight: 700; }
+  .list-dash li::before  { content: "\2013"; color: var(--teal);    font-weight: 700; }
+
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; column-gap: 2.6rem; align-items: start; }
+  @media (max-width: 680px) { .grid2 { grid-template-columns: 1fr; } .body, .band { padding-left: 1.4rem; padding-right: 1.4rem; } }
+
+  .callout {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--teal);
+    border-radius: 5px;
+    padding: 1.05rem 1.25rem;
+  }
+  .callout.warn { border-left-color: var(--accent); }
+  .callout p:last-child { margin-bottom: 0; }
+
+  .diagram-wrap {
+    overflow-x: auto;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 1rem 1rem .6rem;
+  }
+  .diagram-wrap svg { display: block; width: 100%; min-width: 640px; height: auto; }
+  .d-box   { fill: var(--page); stroke: var(--line-strong); stroke-width: 1.4; }
+  .d-gw    { fill: var(--page); stroke: var(--primary); stroke-width: 1.8; }
+  .d-calc  { fill: var(--page); stroke: var(--blue); stroke-width: 1.8; }
+  .d-db    { fill: var(--page); stroke: var(--teal); stroke-width: 1.4; }
+  .d-todo  { fill: none; stroke: var(--accent); stroke-width: 1.6; stroke-dasharray: 6 5; }
+  .d-todo-in { fill: var(--page); stroke: var(--accent); stroke-width: 1.4; stroke-dasharray: 5 4; }
+  .l-socket { fill: none; stroke: var(--primary); stroke-width: 1.8; }
+  .l-grpc   { fill: none; stroke: var(--blue); stroke-width: 1.8; }
+  .l-todo   { fill: none; stroke: var(--accent); stroke-width: 1.6; stroke-dasharray: 6 5; }
+  .l-db     { fill: none; stroke: var(--teal); stroke-width: 1.4; }
+  .mk-socket { fill: var(--primary); }
+  .mk-grpc   { fill: var(--blue); }
+  .mk-todo   { fill: var(--accent); }
+  .t-id    { font: 600 14px "Fira Sans", "Segoe UI", system-ui, sans-serif; fill: var(--ink); text-anchor: middle; }
+  .t-sub   { font: 400 10.5px "Inter", "Segoe UI", system-ui, sans-serif; fill: var(--muted); text-anchor: middle; }
+  .t-link  { font: 500 10.5px "Inter", "Segoe UI", system-ui, sans-serif; text-anchor: middle; }
+  .t-link.socket { fill: var(--primary); }
+  .t-link.grpc   { fill: var(--blue); }
+  .t-link.todo   { fill: var(--accent); }
+  .t-todo  { font: 600 10px "Fira Sans", "Segoe UI", system-ui, sans-serif; letter-spacing: .1em; fill: var(--accent); text-anchor: middle; text-transform: uppercase; }
+
+  .legend { display: flex; flex-wrap: wrap; gap: .4rem 1.4rem; margin-top: .7rem; font-size: .78rem; color: var(--muted); }
+  .legend span { display: inline-flex; align-items: center; gap: .5rem; }
+  .legend i { display: inline-block; width: 1.6rem; height: 0; border-top: 2px solid; }
+  .legend .lg-socket { border-color: var(--primary); }
+  .legend .lg-grpc   { border-color: var(--blue); }
+  .legend .lg-todo   { border-top-style: dashed; border-color: var(--accent); }
+
+  ol.steps { margin: 0; padding: 0; list-style: none; counter-reset: step; }
+  ol.steps li {
+    position: relative;
+    counter-increment: step;
+    padding-left: 2.3rem;
+    margin: .55rem 0;
+    text-wrap: pretty;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .06rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: var(--primary);
+    color: var(--page);
+    font: 600 .75rem/1.5rem "Fira Sans", "Segoe UI", system-ui, sans-serif;
+    text-align: center;
+  }
+
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: .86rem; }
+  th {
+    text-align: left;
+    font: 600 .68rem/1.2 "Fira Sans", "Segoe UI", system-ui, sans-serif;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding: .5rem .7rem;
+    border-bottom: 2px solid var(--line-strong);
+    white-space: nowrap;
+  }
+  td { padding: .6rem .7rem; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--muted); }
+  td:first-child { color: var(--ink); }
+  tr:last-child td { border-bottom: 0; }
+  code {
+    font: 500 .8rem "Cascadia Code", Consolas, "Courier New", monospace;
+    color: var(--primary);
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: .05rem .3rem;
+    white-space: nowrap;
+  }
+
+  .tag {
+    display: inline-block;
+    font: 600 .66rem/1 "Fira Sans", "Segoe UI", system-ui, sans-serif;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    border: 1px solid currentColor;
+    border-radius: 999px;
+    padding: .3rem .55rem;
+    white-space: nowrap;
+  }
+  .tag.ok   { color: var(--ok);   background: color-mix(in srgb, var(--ok) 12%, transparent); }
+  .tag.part { color: var(--warn); background: color-mix(in srgb, var(--warn) 12%, transparent); }
+  .tag.diff { color: var(--warn); background: color-mix(in srgb, var(--warn) 12%, transparent); }
+  .tag.miss { color: var(--bad);  background: color-mix(in srgb, var(--bad) 10%, transparent); }
+
+  .score { display: grid; grid-template-columns: repeat(4, 1fr); gap: .7rem; margin: 0 0 1.1rem; }
+  .score div {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: .8rem 1rem;
+  }
+  .score b { display: block; font: 700 1.6rem/1 "Fira Sans", "Segoe UI", system-ui, sans-serif; font-variant-numeric: tabular-nums; }
+  .score span { font-size: .76rem; color: var(--muted); }
+  .score .s-ok b   { color: var(--ok); }
+  .score .s-part b { color: var(--warn); }
+  .score .s-miss b { color: var(--bad); }
+  @media (max-width: 680px) { .score { grid-template-columns: repeat(2, 1fr); } }
+
+  pre {
+    margin: .6rem 0 0;
+    background: var(--code-bg);
+    color: var(--code-ink);
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    overflow-x: auto;
+    font: 400 .8rem/1.7 "Cascadia Code", Consolas, "Courier New", monospace;
+  }
+  pre .c { color: #7F8B99; }
+  details { margin-top: .4rem; }
+  summary {
+    cursor: pointer;
+    font: 600 .8rem/1.4 "Fira Sans", "Segoe UI", system-ui, sans-serif;
+    color: var(--primary);
+  }
+  summary:focus-visible, .toc a:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .foot {
+    margin-top: 2.2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--line);
+    font-size: .75rem;
+    color: var(--faint);
+  }
+
+  a { color: var(--primary-2); }
+
+  @page { size: A4; margin: 14mm 13mm; }
+  @media print {
+    :root { --ground: #fff; --page: #fff; }
+    html, body { background: #fff; font-size: 13px; line-height: 1.5; }
+    .doc { max-width: none; margin: 0; border-radius: 0; box-shadow: none; }
+    .band { padding: 18px 22px 15px; }
+    .band h1 { font-size: 1.42rem; }
+    .body { padding: 20px 22px 0; }
+    .toc { display: none; }
+    .sections { gap: 1.4rem; }
+    .kicker, h2, h3 { break-after: avoid; }
+    .callout, .diagram-wrap, .score, tr { break-inside: avoid; }
+    details > pre { display: block; }
+    .foot { margin-top: 1.4rem; break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<article class="doc">
+  <header class="band">
+    <p class="eyebrow">Documentação de projeto &middot; Sistemas Distribuídos</p>
+    <h1>Smart Farm: monitoramento agrícola distribuído</h1>
+    <p class="sub">Como funciona, status atual e o que falta</p>
+    <div class="meta">
+      <div>Curso: <b>IFMS &middot; TADS6</b></div>
+      <div>Versão em foco: <b>v2</b></div>
+      <div>Data: <b>11/11/2026</b></div>
+      <span class="pill"><span class="dot"></span> v2: Edge e Fog prontos &middot; anomalias pendentes</span>
+    </div>
+  </header>
+
+  <div class="body">
+    <p class="lead">Sensores simulados de temperatura, umidade e radiação solar mandam leituras para gateways que ficam perto do campo (a camada Edge). Um serviço separado calcula as médias e o gateway guarda o resultado. A v2 já faz a parte Edge e a Fog do diagrama do professor, e falta a detecção de anomalias.</p>
+
+    <ul class="toc">
+      <li><a href="#como-funciona"><span class="n">01</span>Como funciona</a></li>
+      <li><a href="#arquivos"><span class="n">02</span>Como os arquivos se comunicam</a></li>
+      <li><a href="#status"><span class="n">03</span>Status atual</a></li>
+      <li><a href="#falta"><span class="n">04</span>O que falta</a></li>
+    </ul>
+
+    <div class="sections">
+
+      <section id="como-funciona">
+        <p class="kicker"><span class="n">01</span> Como funciona</p>
+        <h2>Nó de campo &rarr; gateway &rarr; serviço de cálculo</h2>
+        <p>Cada parte é um programa separado e elas só conversam pela rede, de dois jeitos:</p>
+        <ul class="list-in">
+          <li>do nó para o gateway: socket TCP, com uma mensagem JSON por linha;</li>
+          <li>do gateway para o serviço de cálculo: gRPC. O gateway chama <code>Average()</code> como se a função fosse local.</li>
+        </ul>
+
+        <h3>Arquitetura da v2</h3>
+        <div class="diagram-wrap">
+          <svg viewBox="0 0 760 420" role="img" aria-labelledby="diag-t diag-d" xmlns="http://www.w3.org/2000/svg">
+            <title id="diag-t">Arquitetura da v2</title>
+            <desc id="diag-d">Seis nós de campo enviam leituras por socket a dois gateways, três para cada um. Os gateways chamam o serviço de cálculo por gRPC e gravam em um SQLite cada. A Fog liga nos gateways por socket e junta as médias num SQLite. O microsserviço de anomalias ainda não existe.</desc>
+            <defs>
+              <marker id="a-socket" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="mk-socket" d="M0,0 L10,5 L0,10 z"/></marker>
+              <marker id="a-grpc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="mk-grpc" d="M0,0 L10,5 L0,10 z"/></marker>
+              <marker id="a-todo" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="mk-todo" d="M0,0 L10,5 L0,10 z"/></marker>
+            </defs>
+
+            <!-- Nós de campo -->
+            <rect class="d-box" x="0" y="20"  width="104" height="48" rx="8"/>
+            <text class="t-id"  x="52" y="41">N1</text><text class="t-sub" x="52" y="58">talhão &middot; :7101</text>
+            <rect class="d-box" x="0" y="80"  width="104" height="48" rx="8"/>
+            <text class="t-id"  x="52" y="101">N2</text><text class="t-sub" x="52" y="118">talhão &middot; :7102</text>
+            <rect class="d-box" x="0" y="140"  width="104" height="48" rx="8"/>
+            <text class="t-id"  x="52" y="161">N3</text><text class="t-sub" x="52" y="178">talhão &middot; :7103</text>
+            <rect class="d-box" x="0" y="236"  width="104" height="48" rx="8"/>
+            <text class="t-id"  x="52" y="257">N4</text><text class="t-sub" x="52" y="274">talhão &middot; :7104</text>
+            <rect class="d-box" x="0" y="296"  width="104" height="48" rx="8"/>
+            <text class="t-id"  x="52" y="317">N5</text><text class="t-sub" x="52" y="334">talhão &middot; :7105</text>
+            <rect class="d-box" x="0" y="356"  width="104" height="48" rx="8"/>
+            <text class="t-id"  x="52" y="377">N6</text><text class="t-sub" x="52" y="394">talhão &middot; :7106</text>
+
+            <!-- Gateways -->
+            <rect class="d-gw" x="224" y="62"  width="112" height="84" rx="8"/>
+            <text class="t-id"  x="280" y="98">G1</text><text class="t-sub" x="280" y="116">gateway &middot; Edge</text><text class="t-sub" x="280" y="131">N1, N2, N3</text>
+            <rect class="d-gw" x="224" y="278" width="112" height="84" rx="8"/>
+            <text class="t-id"  x="280" y="314">G2</text><text class="t-sub" x="280" y="332">gateway &middot; Edge</text><text class="t-sub" x="280" y="347">N4, N5, N6</text>
+
+            <!-- socket nó -> gateway -->
+            <path class="l-socket" d="M104,44 H152 V82 H224"   marker-end="url(#a-socket)"/>
+            <path class="l-socket" d="M104,104 H224"           marker-end="url(#a-socket)"/>
+            <path class="l-socket" d="M104,164 H152 V126 H224" marker-end="url(#a-socket)"/>
+            <path class="l-socket" d="M104,260 H152 V298 H224" marker-end="url(#a-socket)"/>
+            <path class="l-socket" d="M104,320 H224"           marker-end="url(#a-socket)"/>
+            <path class="l-socket" d="M104,380 H152 V342 H224" marker-end="url(#a-socket)"/>
+            <text class="t-link socket" x="164" y="36">socket &middot; READING</text>
+
+            <!-- SQLite -->
+            <path class="l-db" d="M280,146 V172"/><rect class="d-db" x="232" y="172" width="96" height="26" rx="5"/>
+            <text class="t-sub" x="280" y="189">edge-G1.sqlite</text>
+            <path class="l-db" d="M280,362 V382"/><rect class="d-db" x="232" y="382" width="96" height="26" rx="5"/>
+            <text class="t-sub" x="280" y="399">edge-G2.sqlite</text>
+
+            <!-- Serviço de cálculo -->
+            <rect class="d-calc" x="440" y="162" width="112" height="100" rx="8"/>
+            <text class="t-id"  x="496" y="204">Calc Service</text>
+            <text class="t-sub" x="496" y="222">Average()</text>
+            <text class="t-sub" x="496" y="237">sem estado &middot; :7200</text>
+            <path class="l-grpc" d="M336,104 H388 V188 H440" marker-end="url(#a-grpc)"/>
+            <path class="l-grpc" d="M336,320 H388 V236 H440" marker-end="url(#a-grpc)"/>
+            <text class="t-link grpc" x="388" y="216">gRPC</text>
+
+            <!-- Fog -->
+            <rect class="d-gw" x="640" y="20" width="120" height="380" rx="10"/>
+            <text class="t-id"  x="700" y="46">FOG</text>
+            <text class="t-sub" x="700" y="62">servidor local</text>
+            <text class="t-sub" x="700" y="77">fog.sqlite</text>
+            <path class="l-todo" d="M700,90 V150" marker-end="url(#a-todo)"/>
+            <text class="t-link todo" x="722" y="126">RPC</text>
+            <rect class="d-todo-in" x="654" y="150" width="92" height="64" rx="6"/>
+            <text class="t-sub" x="700" y="172" style="font-weight:600;fill:var(--ink)">Anomalias</text>
+            <text class="t-sub" x="700" y="187">micro-serviço</text>
+            <text class="t-todo" x="700" y="205">falta</text>
+            <text class="t-sub" x="700" y="248">umidade baixa?</text>
+            <text class="t-sub" x="700" y="263">ligar irrigação</text>
+            <path class="l-socket" d="M640,80 H336"  marker-end="url(#a-socket)"/>
+            <path class="l-socket" d="M640,340 H336" marker-end="url(#a-socket)"/>
+            <text class="t-link socket" x="488" y="72">socket &middot; ASK / AVERAGES</text>
+            <text class="t-link socket" x="488" y="332">socket &middot; ASK / AVERAGES</text>
+          </svg>
+          <div class="legend">
+            <span><i class="lg-socket"></i> socket TCP &middot; JSON por linha</span>
+            <span><i class="lg-grpc"></i> gRPC &middot; contrato em <code>proto/calc.proto</code></span>
+            <span><i class="lg-todo"></i> ainda não existe</span>
+          </div>
+        </div>
+
+        <h3>Caminho de uma leitura</h3>
+        <ol class="steps">
+          <li>O nó fica escutando na sua porta e, a cada 1,5 s, gera uma leitura de clima simulado (um &ldquo;dia&rdquo; dura 2 minutos, e cada talhão tem o seu perfil de temperatura, umidade e sol) e manda para o gateway conectado, numa mensagem <code>READING</code>. Cada nó atende um gateway por vez, e um segundo que tente entrar recebe <code>ERROR</code>.</li>
+          <li>O gateway é quem liga para os nós. Se um nó cai ou ainda não subiu, ele tenta de novo esperando 1 s, 2 s, 4 s&hellip; até 15 s.</li>
+          <li>As leituras ficam separadas por nó. Quando um nó junta 6, o lote fecha.</li>
+          <li>O gateway chama <code>Average()</code> no serviço de cálculo por gRPC, mandando uma série para cada medida e esperando no máximo 5 s.</li>
+          <li>O serviço de cálculo valida o pedido, calcula a média de cada série e responde. Ele não guarda nada entre uma chamada e outra.</li>
+          <li>O gateway grava no SQLite o nó, o período, quantas leituras entraram e as três médias (°C, % e W/m²). As leituras individuais não são guardadas.</li>
+          <li>A Fog liga nos gateways e, a cada 5 s, pergunta pelas médias gravadas depois da última linha que ela já tem (<code>ASK</code>). O gateway responde com até 200 linhas (<code>AVERAGES</code>).</li>
+          <li>A Fog grava tudo no <code>fog.sqlite</code>. Uma média que já estava lá é ignorada, então perguntar duas vezes não duplica nada.</li>
+        </ol>
+        <div class="callout warn" style="margin-top:.9rem">
+          <p>Se o serviço de cálculo estiver fora do ar, o lote é descartado e vai para o log. O gateway continua recebendo leituras e volta a gravar quando o serviço voltar. Se a Fog cair, os gateways não são afetados e ela busca o que perdeu quando voltar.</p>
+        </div>
+
+        <details>
+          <summary>Como rodar (dentro de v2/)</summary>
+<pre><span class="c"># uma vez</span>
+<span class="c"># o jeito mais simples: um menu que sobe tudo no mesmo terminal</span>
+npm run dev:menu
+
+<span class="c"># ou um comando por terminal</span>
+npm run dev:calc
+npm run dev:field -- N1
+npm run dev:field -- N2
+npm run dev:field -- N3
+npm run dev:gateway -- G1
+
+<span class="c"># segunda área Edge</span>
+npm run dev:field -- N4
+npm run dev:field -- N5
+npm run dev:field -- N6
+npm run dev:gateway -- G2
+
+<span class="c"># a Fog (antes ou depois dos gateways)</span>
+npm run dev:fog
+
+<span class="c"># ver o que foi gravado</span>
+npm run dev:report -- G1
+npm run dev:report -- fog</pre>
+        </details>
+      </section>
+
+      <section id="arquivos">
+        <p class="kicker"><span class="n">02</span> Como os arquivos se comunicam</p>
+        <h2>Quatro pastas, quatro processos</h2>
+        <p>As pastas <code>config</code> e <code>shared</code> têm o que os quatro usam, e <code>launcher</code> só tem o menu que sobe os processos. Os <code>import</code> só dividem código; quando o sistema roda, a conversa é toda pela rede.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Arquivo</th><th>Papel</th><th>Fala com</th></tr></thead>
+            <tbody>
+              <tr><td><code>config/topology.ts</code></td><td>Define nós (com o perfil de cada talhão), gateways, portas e tempos</td><td>Importado por todos</td></tr>
+              <tr><td><code>field-node/node-server.ts</code></td><td>Programa do nó de campo (servidor TCP)</td><td>Usa <code>climate.ts</code>; envia por socket ao <code>node-link.ts</code></td></tr>
+              <tr><td><code>field-node/climate.ts</code></td><td>Gera o clima simulado (senoide do dia, ajustada pelo perfil do talhão)</td><td>Chamado pelo <code>node-server.ts</code></td></tr>
+              <tr><td><code>edge/gateway.ts</code></td><td>Programa do gateway; separa por nó e fecha os lotes</td><td>Usa <code>node-link.ts</code>, <code>calc-client.ts</code> e <code>store.ts</code></td></tr>
+              <tr><td><code>edge/node-link.ts</code></td><td>Conexão e reconexão com cada nó</td><td>Recebe do <code>node-server.ts</code></td></tr>
+              <tr><td><code>edge/calc-client.ts</code></td><td>Cliente gRPC (uma ligação reaproveitada)</td><td>Chama o <code>calc-service.ts</code></td></tr>
+              <tr><td><code>edge/store.ts</code></td><td>Grava as médias no SQLite do gateway e devolve as que a Fog pede</td><td>Lido depois pelo <code>edge/report.ts</code></td></tr>
+              <tr><td><code>edge/fog-server.ts</code></td><td>Porta do gateway para a Fog; responde <code>ASK</code> com <code>AVERAGES</code></td><td>Usa <code>store.ts</code>; atende o <code>fog/gateway-link.ts</code></td></tr>
+              <tr><td><code>fog/fog.ts</code></td><td>Programa da Fog; junta as médias dos gateways</td><td>Usa <code>gateway-link.ts</code> e <code>fog-store.ts</code></td></tr>
+              <tr><td><code>fog/gateway-link.ts</code></td><td>Conexão, pergunta e reconexão com cada gateway</td><td>Pergunta ao <code>edge/fog-server.ts</code></td></tr>
+              <tr><td><code>fog/fog-store.ts</code></td><td>Grava as médias de todos os gateways no <code>fog.sqlite</code></td><td>Lido pelo <code>edge/report.ts</code></td></tr>
+              <tr><td><code>launcher/menu.ts</code></td><td>Menu que sobe e derruba os processos</td><td>Roda os outros programas, sem entrar na conversa deles</td></tr>
+              <tr><td><code>calc-service/calc-service.ts</code></td><td>Servidor gRPC; calcula a média</td><td>Responde ao <code>calc-client.ts</code></td></tr>
+              <tr><td><code>proto/calc.proto</code> + <code>shared/calc-rpc.ts</code></td><td>Contrato do gRPC e seu carregamento</td><td>Usados pelo cliente e pelo servidor</td></tr>
+              <tr><td><code>shared/messages.ts</code> + <code>shared/wire.ts</code></td><td>Contrato do socket e leitura de JSON por linha</td><td>Usados pelo nó, pelo gateway e pela Fog</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top:.8rem">Na raiz do repositório ficam duas pastas: <code>v1/</code>, a primeira versão (o gateway pergunta ao sensor a cada 2 s e as médias vão para um JSON, com painel web), e <code>v2/</code>, a atual (o nó manda sozinho, o cálculo é por gRPC, a gravação é em SQLite e a Fog junta as médias dos gateways).</p>
+      </section>
+
+      <section id="status">
+        <p class="kicker"><span class="n">03</span> Status atual</p>
+        <h2>A v2 cobre o Edge e a Fog; faltam as anomalias</h2>
+        <div class="score">
+          <div class="s-ok"><b>6</b><span>itens prontos</span></div>
+          <div class="s-part"><b>1</b><span>parcial ou divergente</span></div>
+          <div class="s-miss"><b>2</b><span>faltam</span></div>
+          <div><b>9</b><span>itens do diagrama</span></div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Item do diagrama</th><th>Situação</th><th>Observação</th></tr></thead>
+            <tbody>
+              <tr><td>Talhão como servidor (S) e gateway como cliente (C), por socket</td><td><span class="tag ok">Pronto</span></td><td>Os nós escutam e o gateway liga.</td></tr>
+              <tr><td>Dois gateways, um por área Edge</td><td><span class="tag ok">Pronto</span></td><td>G1 e G2.</td></tr>
+              <tr><td>Microsserviço de cálculo por RPC, compartilhado, que retorna a média</td><td><span class="tag ok">Pronto</span></td><td>gRPC, seguindo o exemplo do professor.</td></tr>
+              <tr><td>3 talhões por gateway (6 no total)</td><td><span class="tag ok">Pronto</span></td><td>G1 cuida de N1, N2 e N3, e G2 de N4, N5 e N6. O programa é o mesmo, cada talhão muda só o perfil.</td></tr>
+              <tr><td>Gateway pede e o talhão responde (seta contínua sai do gateway)</td><td><span class="tag diff">Diverge</span></td><td>Na v2 o nó envia sem ninguém pedir; a v1 perguntava.</td></tr>
+              <tr><td>Gateway como servidor de socket para a Fog</td><td><span class="tag ok">Pronto</span></td><td>Cada gateway escuta a Fog numa porta própria (7301 e 7302) e responde ao pedido de médias.</td></tr>
+              <tr><td>Fog como cliente dos dois gateways</td><td><span class="tag ok">Pronto</span></td><td>Ela liga nos dois, pergunta a cada 5 s e guarda tudo num SQLite. Se cair, recupera o que perdeu.</td></tr>
+              <tr><td>Microsserviço de anomalias, chamado pela Fog por RPC</td><td><span class="tag miss">Falta</span></td><td>Pode seguir o mesmo padrão do cálculo, com outro <code>.proto</code>.</td></tr>
+              <tr><td>Gatilho &ldquo;umidade baixa? ligar irrigação&rdquo;</td><td><span class="tag miss">Falta</span></td><td>Depende do microsserviço de anomalias.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Outros pontos</h3>
+        <ul class="list-dash">
+          <li>Os tipos conferem: o <code>npm run typecheck</code> passa sem erros.</li>
+          <li>O <code>npm run dev:menu</code> sobe o cálculo, os nós, os gateways e a Fog no mesmo terminal.</li>
+          <li>Documentação: README na raiz, em <code>v1/</code> e em <code>v2/</code>, e o <code>COMO-FUNCIONA.md</code> com a explicação do código.</li>
+          <li>A v1 está completa. O painel web dela só existe compilado (<code>v1/dist</code> e <code>v1/web</code>), sem o código-fonte em TypeScript.</li>
+        </ul>
+      </section>
+
+      <section id="falta">
+        <p class="kicker"><span class="n">04</span> O que falta</p>
+        <h2>Ordem sugerida</h2>
+        <ol class="steps">
+          <li>Criar o microsserviço de anomalias (outro <code>.proto</code>, no mesmo padrão do cálculo) e ligar na Fog por RPC.</li>
+          <li>Fazer a Fog usar a resposta para o gatilho &ldquo;umidade baixa? ligar irrigação&rdquo;.</li>
+        </ol>
+      </section>
+    </div>
+
+    <p class="foot">Smart Farm &middot; trabalho de Sistemas Distribuídos (IFMS) &middot; situação do código em 11/11/2026.</p>
+  </div>
+</article>
+</body>
+</html>
